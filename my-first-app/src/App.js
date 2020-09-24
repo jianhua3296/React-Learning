@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Name List</h1>
-        <NameTag name="jian"></NameTag>
+        <NameTag firstName="jianhua" lastName="Code"></NameTag>
         <NameTag2 >Jian</NameTag2>
-        <NameTag></NameTag>
+        <NameTag2>Faker</NameTag2>
 
 
       </header>
