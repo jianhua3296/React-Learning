@@ -5,7 +5,7 @@ import React from "react";
 export default (prop) => {
   if (!prop.firstName && !prop.lastName) {
 
-    console.log(prop.firstName);
+    // console.log(prop.firstName);
     return (
       <>
         <h3 className="name">No First name</h3>
@@ -21,4 +21,5 @@ export default (prop) => {
       {prop.firstName==="john" && <div style={{color:"green"}}>VIP</div>}
     </>
   );
+
 };
