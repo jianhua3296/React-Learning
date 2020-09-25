@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Input from "./component/Input";
+import GoalList from "./component/GoalList";
 
 // function App() {
 //   return (
@@ -14,15 +15,29 @@ import Input from "./component/Input";
 // }
 
 const App = () => {
+  const courseGoals = [
+    {
+      id: "cg1",
+      text: "Finish the Course",
+    },
+    {
+      id: "cg2",
+      text: "Learn all about the topics",
+    },
+    {
+      id: "cg3",
+      text: "Help other students",
+    },
+    {
+      id: "cg4",
+      text: "whatever you like",
+    }
+  ];
+
   return (
     <div className="course-goals">
       <h2>Course Goals</h2>
-      <ul className="goal-list">
-        <li>Finish the Course</li>
-        <li>Learn all about the topics</li>
-        <li>Help other students</li>
-        <li>whatever you like</li>
-      </ul>
+      <GoalList goals={courseGoals[0]}/>
     </div>
   );
 };
